@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
     <link rel="stylesheet" href="./src/styles/main-content.css">
     <link rel="stylesheet" href="./src/styles/media-queries.css">
+    <link rel="stylesheet" href="./src/componentes/footer/footer.css">
+    <link rel="stylesheet" href="./src/componentes/header/header.css">
+    <link rel="stylesheet" href="./src/componentes/main/main.css">
+    <link rel="stylesheet" href="./src/sidebar/index.css">
+    <link rel="stylesheet" href="./src/sidebar/app.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
@@ -72,6 +77,70 @@
     <main>
         <div class="main-container">
             <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./src/assets/icons/small-left.png" alt="Seta esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="./src/assets/icons/small-right.png" alt="Seta direita">
+                    </button>
+                </div>
+                <div class="header__search">
+                    <img src="./src/assets/icons/search.png" alt="">
+                    <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+                </div>
+                <div class="header__login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
+        </div>
+            
+            <!-- PLAYLIST -->
+            <div class="playlist-container">
+                <div id="result-playlists">
+                    <div class="playlist">
+                        <h1 id="greeting">Boas vindas</h1>
+                        <h2 class="session">Navegar por todas as seções</h2>
+                    </div>
+
+                    <!-- LIST DE CARDS -->
+                    <div class="offer__scroll-container">
+                        <div class="offer__list">
+                            <section class="offer__list-item">
+                                <!-- CARD 1 -->
+                                <a href="" class="cards">
+                                    <div class="cards card1">
+                                        <img src="./src/assets/playlist/1.jpeg" alt="" />
+                                        <span>Boas festas</span>
+                                    </div>
+                                </a>
+
+                                <!-- CARD 2 -->
+                                <a href="" class="cards">
+                                    <div class="cards card2">
+                                        <img src="./src/assets/playlist/2.png" alt="" />
+                                        <span>Feitos para você</span>
+                                    </div>
+                                </a>
+
+                                <!-- CARD 3 -->
+                                <a href="" class="cards">
+                                    <div class="cards card3">
+                                        <img src="./src/assets/playlist/3.jpeg" alt="" />
+                                        <span>Lançamentos</span>
+                                    </div>
+                                </a>
+
+                                <!-- CARD 4 -->
+                                <a href="" class="cards">
+                                    <div class="cards card4">
+                                        <img src="./src/assets/playlist/4.jpeg" alt="" />
+                                        <span>Creators</span>
+                                    </div>
+                                </a>
+
+                                <!-- CARD 5 -->
                                 <a href="" class="cards">
                                     <div class="cards card5">
                                         <img src="./src/assets/playlist/5.jpeg" alt="" />
@@ -180,7 +249,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </main>
